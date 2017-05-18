@@ -10,7 +10,7 @@
 ## Features:
 - Approval Workflow
 - SMS Sending -> link to approval or overtime input
-- Administrate admin dashboard
+- x Administrate admin dashboard
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
@@ -20,7 +20,4 @@
 - x Update styles for forms
 
 ## Refactor TODOS:
-- Refactor user association integration test in post_spec
 - Refactor posts/_form for admin user with status
-- Fix post_spec.rb to use factories
-- Fix post_spec.rb to have correct user reference without update
