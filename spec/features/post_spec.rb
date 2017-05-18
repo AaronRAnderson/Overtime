@@ -88,7 +88,7 @@ describe 'navigate' do
 
       expect(page).to have_content("Edited Content")
     end
-
+cle
     it 'cannot be edited by a non authorized user' do
       logout(:user)
       non_authorized_user = FactoryGirl.create(:non_authorized_user)
