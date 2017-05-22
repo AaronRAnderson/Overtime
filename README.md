@@ -21,5 +21,5 @@
 - x Icons from glyphicons
 - x Update styles for forms
 
-## Refactor TODOS:
-- Refactor posts/_form for admin user with status
+## TODOS:
+- Integrate validation for phone attr in User:
