@@ -13,7 +13,7 @@ module ApplicationHelper
 
       case status
       when 'submitted'
-        content_tag(:span, status.titleize, class: 'label label-warning')
+        content_tag(:span, status.titleize, class: 'label label-primary')
       when 'approved'
         content_tag(:span, status.titleize, class: 'label label-success')
       when 'rejected'
