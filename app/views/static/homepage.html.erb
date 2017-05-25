@@ -1,13 +1,5 @@
-
-
-<div class="jumbotron">
-  <h2>
-    Ahhhhhh!!!!!!!!!!!
-  </h2>
-  <p>
-  All the overtime
-  </p>
-  <p>
-    <a class="btn btn-danger btn-large" href="#">Learn Nothing</a>
-  </p>
-</div>
+<% if admin_types.include?(current_user.try(:type)) %>
+  <%= render 'admin' %>
+<% else %>
+  <%= render 'employee' %>
+<% end %>
