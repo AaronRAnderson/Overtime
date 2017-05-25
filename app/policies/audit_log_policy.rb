@@ -2,6 +2,9 @@ class AuditLogPolicy < ApplicationPolicy
   def index?
     return true if admin?
   end
+  def confirm?
+    record.user.id == user.id
+  end
 
 private
 
@@ -9,3 +12,4 @@ private
     admin_types.include?(user.type)
   end
 end
+ 
