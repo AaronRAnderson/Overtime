@@ -1,11 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-5 column jumbotron employee-block">
+    <div class="pending-homepage employee-block">
+      <h3>Pending Your Confirmation</h3>
+      <%= render partial: 'pending_audit_confirmations' , locals: {pending_audit_confirmations: @pending_audit_confirmations} %>
+    </div>
+
+    <div class="col-md-5 column pending-homepage employee-block">
       asdf
     </div>
 
-    <div class="col-md-5 column jumbotron employee-block">
-      fda
-    </div>
   </div>
 </div>

@@ -20,8 +20,10 @@ puts "1 admin user created"
 end
 
 puts "100 Post have been created"
-100.times do |audit_log|
-  AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
-end
 
-puts "100 AuditLogs have been created"
+AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
+AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 13.days))
+AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 20.days))
+
+
+puts "3 AuditLogs have been created"
